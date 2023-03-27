@@ -20,12 +20,88 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: whitesmoke;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    padding-left: 30px;
 }
+
+.search
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.search input
+{
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    border-style: none;
+    border-style: double;
+    border-width: 1px;
+    background-color: lightgray;
+
+}
+
+
+.greet
+{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.btns
+{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.btns input
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background: blue;
+    color: white;
+    font-weight: 600;
+}
+
+.login
+{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+
 
 .side-bar {
     border: 2px blue solid;
     background-color: blue;
     grid-row: 1 / 4;
+    display: grid;
+    grid-template-rows: 100px 300px 150px;
+    justify-items: start;
+    padding-left: 16px;
+    min-width: 175px;
+}
+
+.dash-top,
+.dash-bottom, 
+.side-bar p
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 40px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: white;
+    font-weight: 600;
+}
+
+.side-bar p
+{
+    font-size: 1.5rem;
 }
 
 .project-wrapper
@@ -34,8 +110,8 @@ body {
     grid-row: 2 / 4;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-    gap: 16px;
-    padding: 32px;
+    gap: 8px;
+    
     min-width: 500px;
     max-width: 100dvw;
 }
@@ -46,12 +122,37 @@ body {
     grid-column: 1 / 3;
     grid-row: 1 / 5;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     padding-top: 8px;
     padding-bottom: 8px;
     justify-items: center;
     align-items: center;
     overflow: auto;
+    
+    
+}
+
+.project
+{
+    width: 350px;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 8px;
+    text-align: start;
+    padding: 20px 5px 5px 10px;
+}
+
+.title
+{
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.project
+{
+    text-align: start;
+    padding: 10px
 }
 
 .info
@@ -105,14 +206,6 @@ body {
     background: red;
 }
 
-.project
-{
-    width: 350px;
-    height: 200px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    margin-top: 8px;
-}
 
 .content
 {
