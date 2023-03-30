@@ -16,4 +16,4 @@ An admin dashboard showing current projects.
 
 
 ### Showcase 
-![](./images/Showcase/dashboard.png "dashboard")
+![](./images/showcase/dashboard.png "dashboard")
